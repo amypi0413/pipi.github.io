@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./six_1.css" />
+
+    <script type="text/javascript">
+      function toggleMeun() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display == "none") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      function add_one() {
+        var ele = document.createElement("div");
+        ele.innerHTML = "ฅ(•ㅅ•❀)ฅ";
+        document.body.appendChild(ele);
+      }
+    </script>
+    <style type="text/css">
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: #7ff0fd">
+    <div style="text-align: center">
+      <h1>皮皮的大檔案</h1>
+    </div>
+
+    <div class="mido" style="display: block">
+      <div id="left">
+        <h1>自介</h1>
+        <h2>興趣</h2>
+        <p>畫畫、聽音樂、跳舞、打傳說、看動漫(漫畫)</p>
+        <h2>愛吃的食物</h2>
+        <p>臭豆腐、章魚燒</p>
+        <h2>綽號</h2>
+        <p>皮皮、章魚</p>
+        <h2>想要養的寵物</h2>
+        <p>貓咪、刺蝟</p>
+        <div class="pics" style="display: flex; height: 200px">
+          <img
+            width="50%"
+            height="100%"
+            src="https://i.postimg.cc/htLwyRfc/cat.jpg"
+            alt="可愛咪咪"
+          /><br />
+          <img
+            width="50%"
+            height="100%"
+            src="https://i.postimg.cc/fW65dqBs/pig.jpg"
+            alt="刺刺"
+          />
+        </div>
+      </div>
+
+      <div id="right">
+        <h1>貓貓造型用品客製化</h1>
+        <h3>
+          <a href="https://codepen.io/amypi0413/pen/yLREMqK">點擊看更多</a>
+        </h3>
+        <br />
+        <h3 onclick="toggleMeun();" style="cursor: pointer">
+          版主喜愛的三大貓貓品種🧡(點我)
+        </h3>
+        <ul id="menu">
+          <li>暹羅貓</li>
+          <li>布偶貓</li>
+          <li>蘇格蘭折耳貓（短毛貓）</li>
+        </ul>
+        <br />
+        <div onclick="add_one()">
+          <h3 style="cursor: pointer">按我( ・ω・)o─━・*:・:・゜・:</h3>
+        </div>
+      </div>
+
+      <div id="center">
+        <h1 style="width: 100%; text-align: center">想去的地方</h1>
+        <div class="pics" style="display: flex; width: 100%">
+          <div class="pic" style="width: 33%">
+            <h3 style="width: 100%; text-align: center">日本 北海道</h3>
+            <img
+              width="100%"
+              height="100%"
+              src="https://i.postimg.cc/zv2fL2sR/Nihon.jpg"
+              alt="北海道"
+            />
+          </div>
+          <div class="pic" style="width: 34%">
+            <h3 style="width: 100%; text-align: center">英國 倫敦</h3>
+            <img
+              height="100%"
+              width="100%"
+              src="https://i.postimg.cc/630rPwZJ/igirisu.jpg"
+              alt="倫敦"
+            />
+          </div>
+          <div class="pic" style="width: 33%">
+            <h3 style="width: 100%; text-align: center">冰島</h3>
+            <img
+              height="100%"
+              width="100%"
+              src="https://i.postimg.cc/TYrDNTvk/ice.jpg"
+              alt="冰島"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="foot">
+      <h2><p>感謝觀看</p></h2>
+    </div>
+  </body>
+</html>
